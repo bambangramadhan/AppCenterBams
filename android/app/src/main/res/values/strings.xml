@@ -1,3 +1,4 @@
 <resources>
+	<string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">TZsmZzC_sBswRwWFWkUQ0NeQFFG0Hf_BVlxf_</string>
     <string name="app_name">AppCenterBams</string>
 </resources>
