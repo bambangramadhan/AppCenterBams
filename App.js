@@ -34,7 +34,7 @@ export class App extends React.PureComponent {
     console.log('state logs', JSON.stringify(this.state.logs));
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        {/* <Text>{'CodePush pasti bisa'}</Text> */}
+        <Text>{'TAMBAHKAN CODEPUSH BISMILLAH PASTI BERHASIL LAGI'}</Text>
         <TouchableOpacity onPress={() => this.codePushSync()} style={{ height: 40, width: 250, backgroundColor: 'green', borderRadius: 10, justifyContent: 'center' }}>
           <Text style={{ textAlign: 'center' }}>
             {'Klik untuk mengupdate app using CODEPUSH'}
@@ -42,7 +42,7 @@ export class App extends React.PureComponent {
         </TouchableOpacity>
         <View>
           <Text>
-            {"Ini screen App"}
+            {"Ini screen App yang sudah terkena CODEPUSH"}
           </Text>
           <Text style={{ marginTop: 150 }}>
             {JSON.stringify(this.state.logs)}
