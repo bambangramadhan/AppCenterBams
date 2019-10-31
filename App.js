@@ -53,6 +53,6 @@ export class App extends React.PureComponent {
   };
 };
 
-let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME, installMode: codePush.InstallMode.ON_NEXT_RESUME };
+let codePushOptions = { checkFrequency: CodePush.CheckFrequency.ON_APP_RESUME, installMode: CodePush.InstallMode.ON_NEXT_RESUME };
 
 export default CodePush(codePushOptions)(App);
