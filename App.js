@@ -34,7 +34,7 @@ export class App extends React.PureComponent {
     console.log('state logs', JSON.stringify(this.state.logs));
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text style={{ justifyContent: 'center' }}>{'BAMBANG COOL HANDSOME'}</Text>
+        <Text style={{ justifyContent: 'center' }}>{'CODEPUSH NOT HOT RELOAD BEFORE'}</Text>
         <TouchableOpacity onPress={() => this.codePushSync()} style={{ height: 40, width: 250, backgroundColor: 'green', borderRadius: 10, justifyContent: 'center' }}>
           <Text style={{ textAlign: 'center' }}>
             {'Klik untuk mengupdate app using CODEPUSH'}
@@ -53,6 +53,6 @@ export class App extends React.PureComponent {
   };
 };
 
-// let codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
+// let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME, installMode: codePush.InstallMode.ON_NEXT_RESUME };
 
-export default CodePush(App);
+export default App;
