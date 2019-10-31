@@ -34,7 +34,7 @@ export class App extends React.PureComponent {
     console.log('state logs', JSON.stringify(this.state.logs));
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text style={{ justifyContent: 'center' }}>{'BAMBANG GANTENG'}</Text>
+        <Text style={{ justifyContent: 'center' }}>{'BAMBANG COOL HANDSOME'}</Text>
         <TouchableOpacity onPress={() => this.codePushSync()} style={{ height: 40, width: 250, backgroundColor: 'green', borderRadius: 10, justifyContent: 'center' }}>
           <Text style={{ textAlign: 'center' }}>
             {'Klik untuk mengupdate app using CODEPUSH'}
