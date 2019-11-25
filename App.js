@@ -15,18 +15,10 @@ export class App extends React.PureComponent {
   }
 
   codePushSync = () => {
-    // Navigation.push(this.props.componentId, navigation.views.Bams())
     this.setState({ logs: ['Started at ' + new Date()] });
     CodePush.sync({
       updateDialog: true,
       installMode: CodePush.InstallMode.IMMEDIATE
-    }, (status) => {
-      for (var key in CodePush.SyncStatus) {
-        if (status === CodePush.SyncStatus[key]) {
-          this.setState(prevState => ({ logs: [...prevState.logs, key.replace(/_/g, '')] }));
-          break;
-        }
-      }
     });
   }
 
@@ -34,7 +26,7 @@ export class App extends React.PureComponent {
     console.log('state logs', JSON.stringify(this.state.logs));
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text style={{ justifyContent: 'center' }}>{'HAHAHAH HAYO YANGA BNER MANA WOY'}</Text>
+        <Text style={{ justifyContent: 'center' }}>{'VERSI TERBARU UDAH RILIS'}</Text>
         <TouchableOpacity onPress={() => this.codePushSync()} style={{ height: 40, width: 250, backgroundColor: 'green', borderRadius: 10, justifyContent: 'center' }}>
           <Text style={{ textAlign: 'center' }}>
             {'Klik untuk mengupdate app using CODEPUSH'}
